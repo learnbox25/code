@@ -1,6 +1,6 @@
 variable "number" {
   type = number
-  default = 5
+  default = 2
 }
 
 resource "null_resource" "this" {
