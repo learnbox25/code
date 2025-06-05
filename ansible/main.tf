@@ -5,6 +5,7 @@ resource "aws_instance" "controller" {
   tags = {
     Name = "Controller"
   }
+  user_data = file("${path.module}/ansible-bootstrap.sh")
 }
 
 resource "aws_instance" "node" {
